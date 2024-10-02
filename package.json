@@ -1,0 +1,16 @@
+{
+  "name": "des",
+  "version": "0.0.1",
+  "private": "true",
+  "scripts": {
+    "designer": "npm run dev -w @d3s/designer",
+    "build-watch-all": "tsc -b --clean tsconfig.build-all.json & tsc -b -w tsconfig.build-all.json",
+    "bwa": "npm run build-watch-all"
+  },
+  "author": "tilliwilli",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {}
+}
